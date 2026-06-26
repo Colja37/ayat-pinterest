@@ -1,0 +1,122 @@
+/* إعدادات الخطوط والألوان الأساسية */
+:root {
+    --primary-color: #2c5e43; /* أخضر مريح */
+    --accent-color: #d4af37;  /* ذهبي هادئ */
+    --bg-color: #f7f9f6;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* الهيدر */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 4px solid var(--accent-color);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+/* الحاوية الرئيسية */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* قسم الفلترة والتفاعل التمويهي */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn.active, .btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* شبكة عرض اللوحات (Pinterest Style Grid) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #eaeaea;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.verse-text {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.verse-ref {
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px dashed #eee;
+    padding-top: 0.5rem;
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+}
