@@ -3,18 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مشروع آيات - Pinterest</title>
+    <title>مشروع آيات - منصة عرض لوحات بنترست</title>
     <link rel="stylesheet" href="web.css">
 </head>
 <body>
+
     <header>
-        <h1>مشروع آيات الـ Pinterest</h1>
+        <h1>مشروع آيات الرقمي</h1>
+        <p>منصة متكاملة لعرض ومشاركة اللوحات الإسلامية المربوطة عبر الـ API</p>
     </header>
     
     <main>
-        <p>مرحباً بك في مشروع آيات! هنا سيتم عرض اللوحات والآيات قريباً بعد ربط الـ API.</p>
-        <div id="pinterest-content"></div>
+        <div class="controls">
+            <button class="btn active">الكل</button>
+            <button class="btn">الأكثر تداولاً</button>
+            <button class="btn">جديد المنصة</button>
+        </div>
+
+        <div id="pinterest-content" class="grid"></div>
     </main>
+
+    <footer>
+        <p>&copy; 2026 مشروع آيات. جميع الحقوق محفوظة لـ Pinterest App Integration.</p>
+    </footer>
 
     <script src="web.js"></script>
 </body>
