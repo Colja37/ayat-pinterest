@@ -32,3 +32,30 @@ document.addEventListener("DOMContentLoaded", () => {
     // تشغيل الدالة فوراً عند تحميل الصفحة
     displayVerses();
 });
+
+// تشغيل تفتيح وإغلاق نافذة سياسة الخصوصية
+document.addEventListener("DOMContentLoaded", () => {
+    const privacyLink = document.getElementById("privacy-link");
+    const privacyModal = document.getElementById("privacy-modal");
+    const closeModal = document.getElementById("close-modal");
+
+    if (privacyLink && privacyModal && closeModal) {
+        // فتح النافذة عند الضغط على الرابط
+        privacyLink.addEventListener("click", (e) => {
+            e.preventDefault();
+            privacyModal.style.display = "flex";
+        });
+
+        // إغلاق النافذة عند الضغط على علامة X
+        closeModal.addEventListener("click", () => {
+            privacyModal.style.display = "none";
+        });
+
+        // إغلاق النافذة عند الضغط خارج المربع الأبيض
+        window.addEventListener("click", (e) => {
+            if (e.target === privacyModal) {
+                privacyModal.style.display = "none";
+            }
+        });
+    }
+});
