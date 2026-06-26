@@ -25,7 +25,26 @@
 
     <footer>
         <p>&copy; 2026 مشروع آيات. جميع الحقوق محفوظة لـ Pinterest App Integration.</p>
+        <p style="margin-top: 10px;">
+            <a href="#" id="privacy-link" style="color: #2c5e43; text-decoration: underline; font-size: 0.85rem; cursor: pointer;">سياسة الخصوصية (Privacy Policy)</a>
+        </p>
     </footer>
+
+    <!-- النافذة المنبثقة لسياسة الخصوصية -->
+    <div id="privacy-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center; padding: 20px;">
+        <div style="background: white; padding: 30px; border-radius: 12px; max-width: 600px; width: 100%; max-height: 80vh; overflow-y: auto; direction: ltr; text-align: left; position: relative;">
+            <span id="close-modal" style="position: absolute; top: 15px; right: 20px; font-size: 24px; cursor: pointer; color: #777;">&times;</span>
+            <h2 style="margin-bottom: 20px; color: #2c5e43; font-family: sans-serif;">Privacy Policy</h2>
+            <div style="font-family: sans-serif; font-size: 0.9rem; color: #333; line-height: 1.5;">
+                <p><strong>Effective Date: June 2026</strong></p><br>
+                <p>This Privacy Policy outlines how our Ayat Pinterest Integration App ("we", "our") handles user data. Our application connects with the Pinterest API to facilitate the curation and saving of digital Islamic designs.</p><br>
+                <p><strong>1. Data Collection:</strong> We do not collect, store, or share any personal user data or credentials on our servers. All authentication and data transfer processes are handled securely through Pinterest's official OAuth mechanism.</p><br>
+                <p><strong>2. Cookies:</strong> We do not use tracking cookies or analytics tools on this website.</p><br>
+                <p><strong>3. Third-Party Services:</strong> By using this application, you interact directly with Pinterest's services. Please refer to Pinterest's official Privacy Policy regarding their data handling practices.</p><br>
+                <p><strong>4. Contact:</strong> For any inquiries regarding this integration, you can reach out via our GitHub repository support page.</p>
+            </div>
+        </div>
+    </div>
 
     <script src="web.js"></script>
 </body>
